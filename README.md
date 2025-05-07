@@ -23,10 +23,10 @@ https://kur.doviz.com/
 *UYGULAMA GÖRÜNTÜLERİ*  
 
 ![image](https://github.com/user-attachments/assets/3a7ed48e-8987-4954-8dee-168071017794)
-FİLTRELENMİŞ VERİLER
-5,1-38,9  
-5,39  
--0,1-0,7  
+FİLTRELENMİŞ VERİLER  
+5,1 - 38,9  
+5 - 39  
+-0,1 - 0,7  
 ![image](https://github.com/user-attachments/assets/94e6cdab-3631-4c45-a2e9-3eff2ff1d66f)
 
 *KULLANDIĞIM KAYNAKLAR*  
