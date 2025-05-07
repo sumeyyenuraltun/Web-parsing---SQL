@@ -1,8 +1,8 @@
 Bu proje HTML tablo yapısı içeren bir Web sitesinden verileri çekerek bu verileri Python-PostgreSQL bağlantısı sağlayarak veri tabanına kaydetmektedir. Kaydedilen veriler basit bir arayüzde gösterilmektedir ve arayüzde basit bir verileri filtreleme yapısı bulunmaktadır.
 
-*KULLANLILAN TEKNOLOJİ VE KÜTÜPHANELER*
-request : Bu kütüphane HTTP isteği yaparak verileri almamızı sağlar.
-BeautifulSoup: Bu kütüphane ile HTML verileri parçalanıyor.(parsing işlemi)
+*KULLANLILAN TEKNOLOJİ VE KÜTÜPHANELER*  
+request : Bu kütüphane HTTP isteği yaparak verileri almamızı sağlar.  
+BeautifulSoup: Bu kütüphane ile HTML verileri parçalanıyor.(parsing işlemi)  
 psycopg2: Bu kütüphane Python ve PostgreSQL arasında bağlantı sağlayarak veri tabanı oluşturma, tablo oluşturma ve sorgu işlemleri yapmak amacıyla kullanıldı.
 Flask, HTML,CSS: Web arayüzü geliştirmek amacıyla kullanıldı.
 SQL: SQL'i PostgreSQL üzerinde kullandım.
