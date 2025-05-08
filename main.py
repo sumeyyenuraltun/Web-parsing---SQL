@@ -12,6 +12,7 @@ response = requests.get("https://kur.doviz.com/") #siteye istek gönderir
 veriler = []
 #WEB PARSING
 def web_parsing():
+ global veriler
  soup = BeautifulSoup(response.content,"html.parser")
  tablo_verisi = soup.find_all("table",{"id":"currencies"}) #table verilerini alıyoruz
 
@@ -61,6 +62,9 @@ def veriyi_ekle():
     degisim = EXCLUDED.degisim
 """
  cursor.executemany(query_upsert, veriler)
+ baglanti.commit()
+ cursor.close()
+ baglanti.close()
 
 
 #FLASK İLE ARAYÜZ
@@ -93,4 +97,6 @@ def filtre_sifirla():
   doviz_kuru = getDovizKuru()
   return render_template("arayuz.html", doviz_kuru=doviz_kuru)
 
+web_parsing()
+veriyi_ekle()
 app.run(debug=True)
