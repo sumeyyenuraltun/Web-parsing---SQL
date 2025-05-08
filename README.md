@@ -1,4 +1,4 @@
-Bu proje HTML tablo yapısı içeren bir Web sitesinden verileri çekerek bu verileri Python-PostgreSQL bağlantısı sağlayarak veri tabanına kaydetmektedir. Kaydedilen veriler basit bir arayüzde gösterilmektedir ve arayüzde basit bir verileri filtreleme yapısı bulunmaktadır.
+Bu proje HTML tablo yapısı içeren bir Web sitesinden verileri çekerek bu verileri Python-PostgreSQL bağlantısı ile verileri veri tabanına kaydetmektedir. Kaydedilen veriler basit bir arayüzde gösterilmektedir ve arayüzde basit bir verileri filtreleme yapısı bulunmaktadır.
 
 *KULLANLILAN TEKNOLOJİ VE KÜTÜPHANELER*  
 request : Bu kütüphane HTTP isteği yaparak verileri almamızı sağlar.  
