@@ -23,14 +23,9 @@ def db_olustur():
         cursor.execute("SELECT 1 FROM pg_database WHERE datname='dovizkuru_db'")
         if not cursor.fetchone():
             cursor.execute("CREATE DATABASE dovizkuru_db WITH OWNER postgres")
-            print("Veritabanı oluşturuldu.")
         else:
-            print("Veritabanı zaten var.")
-            
-    
             cursor.close()
             baglanti.close()
-
 
 database_name ="dovizkuru_db"
 
@@ -40,7 +35,7 @@ def tablo_olustur():
  cursor = baglanti.cursor()
  query_create_table = """
  CREATE TABLE IF NOT EXISTS kur_tablosu(
- kur_adi VARCHAR(50) PRIMARY KEY,
+ kur_adi TEXT PRIMARY KEY,
  alis FLOAT,
  satis FLOAT,
  en_yuksek FLOAT,
